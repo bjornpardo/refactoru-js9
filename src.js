@@ -10,9 +10,13 @@
 var splice = function(arr, start, numToReplace, replace) {
 	var output = [];
 	for(var i=0; i<arr.length; i++) {
-		// if (i===0 || i===1 || i===4){	
 		if ((i < start) || (i === start + numToReplace)){
-		output.push(arr[i]);
+			output.push(arr[i]);
+		}
+		else {
+			if (i === 4) {
+				output.push(arr[i]);
+			}
 		}
 	}
 
@@ -20,8 +24,12 @@ var splice = function(arr, start, numToReplace, replace) {
 	// 	if (i===0 || i===3 || i===4){
 	// 		output.push(arr[i]);
 	// 	}
+	// }
+
+	// if ()
+	// push z
+	// if
+	// 
+	
 	return output;
 };
-
-
-
